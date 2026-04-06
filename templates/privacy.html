@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+
+{% block title %}Spendly — Privacy Policy{% endblock %}
+
+{% block content %}
+
+<section class="auth-section">
+    <div class="auth-container privacy-container">
+        <div class="auth-header">
+            <h1 class="auth-title">Privacy Policy</h1>
+            <p class="auth-subtitle">Last updated: April 6, 2026</p>
+        </div>
+
+        <div class="auth-card privacy-card">
+            <div class="terms-body">
+                <h2>1. Data We Collect</h2>
+                <p>
+                    Spendly collects information that you voluntarily provide while using
+                    the Service. This includes your account details (such as email address
+                    and password), expense entries (category, amount, date, description),
+                    and usage data necessary for providing and improving the Service.
+                </p>
+                <p>
+                    We do not collect information from third parties about your financial
+                    history or spending habits. All data in Spendly is entered by you.
+                </p>
+
+                <h2>2. How We Use Your Data</h2>
+                <p>
+                    The data you provide is used exclusively for the purpose of helping you
+                    track and understand your personal expenses. Specifically, we use your
+                    data to:
+                </p>
+                <ul>
+                    <li>Create and maintain your personal account</li>
+                    <li>Display your expense summaries and category breakdowns</li>
+                    <li>Enable filtering and analysis of your spending by date range</li>
+                    <li>Send service-related notifications (account alerts, password resets)</li>
+                    <li>Diagnose technical issues and improve the Service</li>
+                </ul>
+                <p>
+                    We do not use your personal financial data for advertising, profiling,
+                    or any purpose other than providing the Service to you.
+                </p>
+
+                <h2>3. Data Storage and Security</h2>
+                <p>
+                    Your expense data is stored on secure servers with industry-standard
+                    encryption in transit (HTTPS/TLS). Access to your data is restricted to
+                    your authenticated session only.
+                </p>
+                <p>
+                    While we implement reasonable safeguards to protect your data, no method
+                    of electronic storage or transmission over the internet is 100% secure.
+                    We encourage you to use strong, unique passwords for your account.
+                </p>
+
+                <h2>4. Third Party Services</h2>
+                <p>
+                    Spendly may use third-party services to support its operation, such as
+                    hosting providers and analytics tools. These services may have limited
+                    access to anonymized or aggregated data required for their technical
+                    functions.
+                </p>
+                <p>
+                    We do not sell, trade, or rent your personally identifiable information
+                    to any third party. Any third-party services we use are selected based
+                    on their privacy practices and are bound by data processing agreements.
+                </p>
+
+                <h2>5. Your Rights</h2>
+                <p>
+                    You have the right to access, modify, or delete your personal data at
+                    any time through your account settings. If you choose to delete your
+                    account, all associated data will be permanently removed from our servers.
+                </p>
+
+                <h2>6. Contact Us</h2>
+                <p>
+                    If you have any questions about this Privacy Policy or how your data is
+                    handled, please contact us at
+                    <a href="mailto:support@spendly.app">support@spendly.app</a>.
+                </p>
+            </div>
+        </div>
+
+        <a href="{{ url_for('landing') }}" class="auth-switch-link" style="display:block; text-align:center; font-size:0.875rem; color:var(--ink-muted);">
+            &larr; Back to home
+        </a>
+    </div>
+</section>
+
+{% endblock %}
